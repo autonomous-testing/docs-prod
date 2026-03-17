@@ -48,7 +48,7 @@ Full list of `.env` file parameters could be found [here](https://docs.wopee.io)
 
     You can find your project UUID and Wopee.io API key in the project settings screen after navigating to project.
 
-    ![Project UUID](../img/project-settings.gif)
+    ![Project UUID](../img/project-settings.webp)
 
 ### Set up CI/CD
 

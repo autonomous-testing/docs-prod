@@ -76,7 +76,7 @@ WOPEE_API_KEY=your-api-key
 
     **Find your project UUID and API key in the `PROJECT SETTINGS` / `API Keys` section.**
 
-    ![Project UUID](img/project-settings.gif)
+    ![Project UUID](img/project-settings.webp)
 
 ??? info "How to set env variables?"
 
