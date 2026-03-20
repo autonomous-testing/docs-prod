@@ -1,5 +1,6 @@
 ---
 title: Template Project
+description: Ready-to-use Cypress template project for Wopee.io visual testing. Clone, configure your API key, and run your first visual test in minutes.
 ---
 
 This is anThis might be a good place to start with Wopee.io and Cypress visual testing. Our template project provides you with a ready-to-use setup for visual testing with Cypress and Wopee.io. Also you will find a demo test that you can run to see how it works.

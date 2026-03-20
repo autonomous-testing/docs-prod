@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: Get started with Wopee.io visual testing for Cypress. Clone the template project or install the plugin into your existing Cypress setup.
 ---
 
 ## Getting started

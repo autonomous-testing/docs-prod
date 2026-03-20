@@ -1,3 +1,7 @@
+---
+description: Connect Wopee.io to apps behind VPN or firewalls. Options include IP allowlisting, VPN tunnels, and on-premise agent deployment.
+---
+
 # Enterprise Connectivity
 
 Connect Wopee.io to applications behind VPN, firewalls, or in secure enterprise environments.

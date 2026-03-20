@@ -1,5 +1,6 @@
 ---
 title: AI Testing Agents for your web apps
+description: Wopee.io AI testing agents explore your web app, generate Playwright tests, and self-heal when your UI changes. No coding required, deterministic test output.
 ---
 
 # AI Testing Agents for your web apps

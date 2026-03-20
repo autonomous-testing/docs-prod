@@ -1,3 +1,7 @@
+---
+description: Build a reusable Page Object Model login module for Wopee.io. Register it once and reference it across multiple test scenarios without re-analysis.
+---
+
 # POM: Reusable Login Module
 
 On this example we will create a robust, reusable login module that Wopee.io can reference without re-analysis. This guide shows you how to build, register, and use login components efficiently.

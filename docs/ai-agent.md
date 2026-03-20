@@ -1,3 +1,7 @@
+---
+description: Step-by-step guide to set up Wopee.io. Create a project, generate tests automatically, and run your first autonomous test in minutes.
+---
+
 # 🤖 Getting started
 
 ## 1. Login to [Wopee Commander](https://cmd.wopee.io)

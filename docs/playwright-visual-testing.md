@@ -1,3 +1,7 @@
+---
+description: Integrate Wopee.io visual testing with Playwright. Add visual validation to your existing tests in JavaScript, Python, Java, or .NET.
+---
+
 # Playwright
 
 ## 📄 About

@@ -1,3 +1,7 @@
+---
+description: Best practices for writing effective prompts in Wopee.io. Structure goals, scope, and constraints to generate high-quality automated tests.
+---
+
 # Prompting Guidelines - Good Practices
 
 Master the art of writing effective prompts for Wopee.io to generate high-quality tests and documentation.

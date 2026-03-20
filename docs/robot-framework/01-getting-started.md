@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: Get started with Wopee.io visual testing for Robot Framework. Works with Browser library, Selenium, and picture comparison for PDF or mobile apps.
 ---
 
 ## Getting started

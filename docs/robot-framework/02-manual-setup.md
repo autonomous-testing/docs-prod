@@ -1,5 +1,6 @@
 ---
 title: Template project
+description: Manual setup guide for the Wopee.io Robot Framework template project. Install dependencies, configure API access, and run visual tests.
 ---
 
 The following steps will guide you through the setup of the template project. If you want a faster alternative, you can use the [Makefile](03-setup-with-make.md) to automate the setup process. However, following the instructions below will give you a better understanding of the project structure.

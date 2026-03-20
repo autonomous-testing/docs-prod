@@ -1,3 +1,7 @@
+---
+description: 8-week guided pilot projects with Wopee.io. Achieve 70-90% faster test creation, 2-5x coverage increase, and expert coaching for autonomous testing.
+---
+
 # Pilot Projects
 
 ## Why Choose a Pilot Project?
