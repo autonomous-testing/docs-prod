@@ -1,3 +1,7 @@
+---
+description: Feed Jira stories, Figma designs, or app crawl data into Wopee.io to generate higher-quality test cases with richer context.
+---
+
 # Analysis - Inputs
 
 First go to strategy for test analysis is to use our AI Testing Agent to analyze the application and generate test cases. Apart from crawling, you can also use Jira stories, Figma designs, or any other artifact to generate test cases. Actually, this is a more efficient way to generate test cases, because the AI Testing Agent can use only information from your crawling instruction / prompt and context from collected screenshots and HTML.

@@ -1,3 +1,7 @@
+---
+description: Wopee.io MCP server for IDE integration. Manage test suites, generate test cases, and dispatch AI testing agents via Model Context Protocol.
+---
+
 # 🚀 Wopee.io MCP
 
 A Model Context Protocol (MCP) server for integrating with Wopee.io's autonomous testing platform. Manage analysis suites, generate test cases and user stories, and dispatch autonomous testing agents directly from your IDE.

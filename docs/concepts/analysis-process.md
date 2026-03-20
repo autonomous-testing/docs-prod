@@ -1,3 +1,7 @@
+---
+description: How Wopee.io analyzes your web app to generate automated tests. Configure crawling, review scenarios, and export deterministic Playwright code.
+---
+
 # Analysis Process
 
 The analysis process transforms your application into a set of actionable, automated tests by systematically exploring its features, identifying user journeys, and generating reliable test cases. This ensures your app is thoroughly understood and tested, while giving you full control to guide and refine each step for maximum relevance and coverage.

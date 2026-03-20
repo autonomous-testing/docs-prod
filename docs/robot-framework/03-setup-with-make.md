@@ -1,5 +1,6 @@
 ---
 title: Setup with Make
+description: Automate Wopee.io Robot Framework setup with Makefile. Run visual tests with a single command after initial environment configuration.
 ---
 
 This makes some steps easier to run. You can use the Makefile to run tests with a single command.

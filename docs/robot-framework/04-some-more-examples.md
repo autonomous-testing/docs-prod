@@ -1,5 +1,6 @@
 ---
 title: Some more examples
+description: Advanced Wopee.io Robot Framework examples. Extract comparison details, handle multiple viewports, and integrate visual checks into CI pipelines.
 ---
 
 ## Comparison details from response

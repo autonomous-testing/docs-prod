@@ -1,3 +1,7 @@
+---
+description: Set up Wopee.io visual testing with WebdriverIO. Clone the template project or install the plugin into your existing WebdriverIO setup.
+---
+
 # WebdriverIO
 
 ## Getting started

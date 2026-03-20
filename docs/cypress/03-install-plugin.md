@@ -1,5 +1,6 @@
 ---
 title: Install Plugin
+description: Install the Wopee.io Cypress plugin to add visual regression testing to your existing Cypress project. Step-by-step setup guide.
 ---
 
 To start visual testing with your existing Cypress tests, leverage the benefits of the Wopee.io Cypress plugin. Follow the steps below to install the plugin.

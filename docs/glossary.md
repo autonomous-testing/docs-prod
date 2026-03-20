@@ -1,3 +1,7 @@
+---
+description: Definitions of key Wopee.io concepts including baselines, projects, branches, test runs, scenarios, steps, and comparison modes.
+---
+
 # 📖 Glossary
 
 ### Baseline
