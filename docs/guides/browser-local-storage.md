@@ -64,9 +64,13 @@ When the browser window opens:
 
 After closing the browser, verify that `auth.json` was created in your current directory. The file should contain your browser's storage state including cookies, localStorage, sessionStorage, and IndexedDB data.
 
-### Step 5: Move the file to your repository
+### Step 5: Provide the file to Wopee.io
 
-Move the generated `auth.json` file to your repository's `data` directory:
+Once you have your `auth.json`, hand it to Wopee.io in one of two ways:
+
+- **Upload it in Commander (recommended)** — no repository work needed. See
+  [How to upload auth.json in Commander](#how-to-upload-authjson-in-commander) below.
+- **Commit it to your repository** — move the file to your repository's `data` directory:
 
 ```bash
 mkdir -p data
@@ -139,6 +143,48 @@ If the storage state is correct, you should see your application in an authentic
 - Consider cleaning up unnecessary storage entries
 - Focus on essential authentication and state data
 
+## How to upload auth.json in Commander
+
+The easiest way to provide your `auth.json` is to upload it directly in Commander — no repository work needed. The agent then starts **both crawling and test execution already logged in**.
+
+You can upload the file at three levels. The **most specific level wins**: a user story overrides its analysis, and an analysis overrides the project.
+
+```text
+User story   (most specific)  ──▶  overrides analysis and project
+Analysis                      ──▶  overrides project
+Project      (broadest)       ──▶  applies everywhere by default
+```
+
+Uploading requires project-admin rights. If the **Upload** button is greyed out, ask your project admin.
+
+!!! info "Where each file is stored"
+
+    Each upload is committed to your project repository: the project level to `data/auth.json`, the analysis level to `data/auth.json` on the analysis branch, and the user story level to `data/US00x/auth.json` on the analysis branch. You normally don't need to touch these files by hand.
+
+### Project level
+
+Applies to **every** analysis and run in the project. Open **Project Settings → Authentication** and upload your `auth.json`.
+
+![Project-level auth.json upload in Project Settings](../img/guides/browser-local-storage/upload-project-level.png)
+
+### Analysis level
+
+Applies to a **single analysis**, overriding the project-level file. Open the analysis **1. Inputs** panel and expand the **Authentication (auth.json)** section.
+
+![Analysis-level auth.json upload in the analysis Inputs panel](../img/guides/browser-local-storage/upload-analysis-level.png)
+
+### User story level
+
+Applies to a **single user story**, overriding both the analysis and project files. Open the user story's edit dialog (the pencil icon in **4. Test Cases**) and expand its **Authentication (auth.json)** section.
+
+![User-story-level auth.json upload in the user story dialog](../img/guides/browser-local-storage/upload-user-story-level.png)
+
+The status chips on each panel show which levels currently have a file and when each was uploaded, so you can see exactly which one the agent will use.
+
+!!! warning "Sessions expire"
+
+    `auth.json` contains live session cookies and tokens. When logins stop working, re-capture the file (repeat the steps above) and re-upload it — the new file replaces the old one.
+
 ## Supported storage types
 
 Wopee.io AI Agent automatically loads data from the `data` directory. It is based on Playwright's [browser context](https://playwright.dev/docs/test-state#browser-context) and supports multiple browser storage mechanisms:
@@ -159,9 +205,21 @@ Small pieces of data stored by the browser for specific domains.
 
 More complex database storage for larger amounts of structured data.
 
-## How to upload local storage data: JSON Context File
+## Alternative: commit the file to your repository
 
-Upload a complete browser context file to your repository's `data` directory. The AI testing agent will automatically detect and apply this storage state.
+Instead of [uploading in Commander](#how-to-upload-authjson-in-commander), you can commit the browser context file to your repository's `data` directory by hand. The AI testing agent will automatically detect and apply this storage state.
+
+The same cascade applies, based on where you place the file:
+
+| Level      | Path                    | Branch          |
+| ---------- | ----------------------- | --------------- |
+| Project    | `data/auth.json`        | default branch  |
+| Analysis   | `data/auth.json`        | analysis branch |
+| User story | `data/US00x/auth.json`  | analysis branch |
+
+!!! note "Check it in Commander"
+
+    Once the file is committed to the correct path and branch, it also shows up in the matching **Authentication (auth.json)** panel in Commander — the status chips there confirm the level is picked up. If it doesn't appear, double-check the path and branch against the table above.
 
 Create a file named `auth.json` in your `data` directory (example):
 
